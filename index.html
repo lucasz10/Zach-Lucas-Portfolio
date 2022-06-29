@@ -9,33 +9,77 @@
 <body>
     <header>
         <h1> Zachary Lucas - Web Development Portfolio</h1>
-        <ul>
-            <li>Introduction</li>
-            <li>Web Development Projects</li>
-            <li>Socials & Contact Info</li>
-        </ul>
+        <!-- Links to sections in header -->
+        <nav>
+            <ul class="navTools">
+                <li><a class="navBar" href='#introduction'>Introduction</a></li>
+                <li><a class="navBar" href='#projects'>Web Development Projects</a></li>
+                <li><a class="navBar" href='#socials'>Socials & Contact Info</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="introduction">
+    <!-- Introductory details -->
+    <article id="introduction">
         <h2>Introduction:</h2>
         <p>
-            <br> My name is Zachary Lucas, an aspiring web developer and software engineer. </br>
-
-            <br> My education has taken me all over the place. I first entered Arizona State University
-                 pursuing a B.S. in Computer Systems Engineering. My sophomore year, I decided to pursue
-                 psychology instead. I graduated in 2017, and for a short time floated around until I came
-                 back to engineering as a Fire Protection Design Engineer. Now I'm looking to return to my
-                 previous passion in the tech world.
+            <br> 
+                My name is Zachary Lucas, an aspiring web developer and software engineer. 
+                At a basic level, you can summarize me as a passionate volleyball player, and an avid gamer. 
+            </br>
+            <img src="./assets/images/20220626_150006.jpg" alt="Me performing a jump serve"> 
+            <img src="./assets/images/IMG_20220629_104454_947.jpg" alt="My current volleyball team, the Phoenix Valor"> 
+            <br> 
+                I absolutely love volleyball, and have been actively playing since 2013. 
+                In recent history, I established and have been managing a semiprofessional
+                volleyball team for the Volleyball League of America, even going as far as 
+                preparing a website for the team, which will be found in the links below as 
+                I complete it.
+            </br>
+            <img src="./assets/images/IMG_20220627_133231_118.jpg" alt="My fiance and myself in the snow">
+            <img src="./assets/images/20220516_191501.jpg" alt="My Golden Retriever puppy, Fenix">
+            <br>
+                I am recently engaged to the lovely woman above, and we both parent the adorable
+                fur baby as well. She has a background in graphic design, so maybe we can become
+                a duo that develops beautiful websites from our own office. We've already brainstormed
+                multiple ideas that may come to fruition later in this year!
             </br>
         </p>
-    </div>
-    <div class="personal">
-        <h3>Personal Life</h3>
+    </article>
+    <article>
+        <h2>Education:</h2>   
         <p>
-            <br> At a basic level, you can summarize me as a passionate volleyball player, and an avid gamer. </br>
-
-            <br> I absolutely love volleyball, and have been actively playing since 2013. 
-                 In recent history, I established and have been managing a semiprofessional
-                 volleyball team for the Volleyball League of America.
+            <br> 
+                My education has taken me all over the place. I first entered Arizona State University
+                pursuing a B.S. in Computer Systems Engineering. My sophomore year, I decided to pursue
+                psychology instead. I graduated in 2017, and for a short time floated around until I came
+                back to engineering as a Fire Protection Design Engineer, even earning certification through
+                Level 2 with Water-Based Systems Layout. Now I'm looking to return to my previous passion in 
+                the tech world. Currently, I am pursuing education through the web development bootcamp hosted
+                by the University of Arizona, and expecting to complete this in December of 2022.
+            </br>
         </p>
-    </div>
+    </article>
+    <!-- Screenshots and links to projects -->
+    <main id="projects">
+        <section>
+            <!-- Main / Featured Project-->
+            <a class="recent-project" href="https://lucasz10.github.io/Module-01-Weekly-Challenge/" target="blank"><span class=proj1>Project 1 - U of A - HTML and CSS Refactor</span> <img src="./assets/images/lucasz10.github.io_Module-01-Weekly-Challenge_.png" alt="A picture and link to the featured project"> </a>
+            <!-- Secondary / Upcoming Projects-->
+            <div>
+                <a href="https://github.com/lucasz10" target="blank"><span class=proj2>Coming Soon!</span> <img src="./assets/images/placeholder.png" alt="Coming Soon"></a>
+                <a href="https://github.com/lucasz10" target="blank"><span class=proj3>Coming Soon!</span> <img src="./assets/images/placeholder.png" alt="Coming Soon"></a>
+                <a href="https://github.com/lucasz10" target="blank"><span class=proj4>Coming Soon!</span> <img src="./assets/images/placeholder.png" alt="Coming Soon"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="socials">
+        <h3> Socials & Contact Information </h3>
+        <ul class="navTools">
+            <li><a class="navBar" href='mailto:lucas.zach10@gmail.com' target='blank'> Email</a></li>
+            <li><a class="navBar" href='https://www.linkedin.com/in/zachary-lucas-234a78166/' target="blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    
 </body>
