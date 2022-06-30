@@ -1,5 +1,5 @@
 :root {
-    font: 12px Helvetica, Arial, sans-serif;
+    font: 15px Helvetica, Arial, sans-serif;
     --primary-background: #DAA520;
     --secondary-background: white;
     --text-con: white;
@@ -17,6 +17,7 @@ a {
 }
 body {
     background-color: var(--secondary-background);
+
 }
 
 header{
@@ -26,19 +27,20 @@ header{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: space-evenly;
 }
 
 header h1 {
     flex: 1;
-    justify-content: center;
     font-size: 40px ;
     padding: 20px;
 }
 
+/* Sets formatting parameters for any navigation elements */
+
 .navTools {
     list-style-type: none;
     padding-top: 10px;
-    margin-right: 10px;
     font-size: 20px;
 }
 
@@ -65,8 +67,40 @@ header h1 {
 
 }
 
-img {
-    max-width: 400px;
+/* Sets formatting for introduction section */
+h2 {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.summary{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.bio {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px dashed var(--primary-background);
+    width: 25%;
+    padding: 20px;
+    margin: 3%;
+    min-width: 400px;
+}
+
+.bio p{
+    padding: 5%;
+    text-align: center;
+}
+
+.bio img {
+    width: 100%;
+    padding: 10px;
+    border: 5px solid var(--primary-background);
+
 }
 
 
