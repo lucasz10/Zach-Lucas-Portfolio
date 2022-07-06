@@ -80,10 +80,15 @@ h2 {
     padding: 20px;
 }
 
-.bio {
+.aboutMe {
+    flex: 0 0 calc(25% - 20px);
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bio {
     border: 2px dashed var(--primary-background);
     width: 25%;
     padding: 20px;
@@ -101,6 +106,62 @@ h2 {
     padding: 10px;
     border: 5px solid var(--primary-background);
 
+}
+/* Section for altering project list formatting */ 
+
+#projects {
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+/* Main Project formatting */
+.recent-project {
+    width: 60%;
+
+}
+
+.recent-project img {
+
+    border: 5px groove var(--primary-background);
+    margin: 10px;
+    max-width: 100%;
+    
+}
+
+/* upcoming project format */
+.upcoming {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.sub-projects {
+
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+
+}
+
+.sub-projects img{
+
+    width: 100%;
+
+}
+
+@media screen and (max-width: 992px) {
+    .bio {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sub-projects{
+        flex: 1 0 350px;
+    }
 }
 
 
