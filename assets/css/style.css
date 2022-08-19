@@ -89,24 +89,10 @@ h2 {
 }
 
 .bio {
-    border: 2px dashed var(--primary-background);
-    width: 25%;
-    padding: 20px;
-    margin: 3%;
-    min-width: 400px;
-}
-
-.bio p{
-    padding: 5%;
-    text-align: center;
-}
-
-.bio img {
-    width: 100%;
-    padding: 10px;
-    border: 5px solid var(--primary-background);
+    border: 8px double var(--primary-background);
 
 }
+
 /* Section for altering project list formatting */ 
 
 #projects {
