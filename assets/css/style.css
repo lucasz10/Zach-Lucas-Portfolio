@@ -6,15 +6,7 @@
     --text-norm: black;
 
 }
-/* Reformat hyperlink text in header nav bar */
-.navBar {
-    text-decoration: none;
-    color: var(--text-con);
-}
 
-a {
-    text-decoration: none;
-}
 body {
     background-color: var(--secondary-background);
 
@@ -38,34 +30,10 @@ header h1 {
 
 /* Sets formatting parameters for any navigation elements */
 
-.navTools {
-    list-style-type: none;
-    padding-top: 10px;
-    font-size: 20px;
+.btn {
+    background-color: var(--primary-background);
 }
 
-.navTools li {
-    display: inline;
-    background-color: black;
-    padding: 2px;
-    margin: 40px 10px;
-    border-style: double;
-    border-color: var(--primary-background);
-    
-}
-
-/* When hovered over, slightly alters nav boxes */
-.navTools li a:hover, a:active {
-    background-color: var(--secondary-background);
-    color: var(--text-norm);
-    padding: 10px;
-    margin: 3px;
-    font-size: 24px;
-    font-weight: bold;
-    border-style: double;
-    border-color: var(--primary-background);
-
-}
 
 /* Sets formatting for introduction section */
 h2 {
@@ -88,67 +56,13 @@ h2 {
     justify-content: center;
 }
 
-.bio {
+.card.mx-2,
+.card-img-top.img-thumbnail {
     border: 8px double var(--primary-background);
 
 }
 
-/* Section for altering project list formatting */ 
 
-#projects {
-
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-
-}
-
-/* Main Project formatting */
-.recent-project {
-    width: 60%;
-
-}
-
-.recent-project img {
-
-    border: 5px groove var(--primary-background);
-    margin: 10px;
-    max-width: 100%;
-    
-}
-
-/* upcoming project format */
-.upcoming {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-.sub-projects {
-
-    flex: 0 0 calc(25% - 20px);
-    margin: 10px;
-
-}
-
-.sub-projects img{
-
-    width: 100%;
-
-}
-
-@media screen and (max-width: 992px) {
-    .bio {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .sub-projects{
-        flex: 1 0 350px;
-    }
-}
 
 
 /* section for altering footer formatting */
