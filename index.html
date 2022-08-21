@@ -3,8 +3,10 @@
     <meta charset="UTF-8">
     <title>Zachary Lucas - Web Development Portfolio</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -13,9 +15,9 @@
         <!-- Links to sections in header -->
         <nav>
             <div class="col">
-                <a class="btn btn-secondary" href="#introduction" role="button">Introduction</a>
-                <a class="btn btn-secondary" href="#projects" role="button">Web Development Projects</a>
-                <a class="btn btn-secondary" href="#socials" role="button">Socials & Contact Info</a>
+                <a class="btn" href="#introduction" role="button">Introduction</a>
+                <a class="btn" href="#projects" role="button">Web Development Projects</a>
+                <a class="btn" href="#socials" role="button">Socials & Contact Info</a>
             </div>
         </nav>
     </header>
@@ -26,85 +28,111 @@
         My name is Zachary Lucas, an aspiring web developer and software engineer. 
         At a basic level, you can summarize me as a passionate volleyball player, and an avid gamer. 
     </p>
+
+    
+
     <div class="aboutMe d-flex justify-content-center align-items-center">
-        <div class="col-3">
-            <div class="card mx-2" style="border: 8px double darkorange" id="introduction">
-                <img src="./assets/images/20220626_150006.jpg" class="card-image-top" alt="Me performing a jump serve">
+        
+            <div class="card mx-2 w-50"  id="introduction">
+                <div class="card-img-top">
+                    <div id="introPics" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./assets/images/20220626_150006.jpg" class="w-100" alt="Me performing a jump serve">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/IMG_20220629_104454_947.jpg" class="w-100" alt="My current volleyball team, the Phoenix Valor">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/IMG_20220627_133231_118.jpg" class="w-100" alt="My fiance and myself in the snow">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/images/20220516_191501.jpg" class="w-100" alt="My Golden Retriever puppy, Fenix">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#introPics" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#introPics" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
                 <div class="card-body">
                     <p class="text-center">           
-                            I absolutely love volleyball, and have been actively playing since 2013. 
-                            In recent history, I established and have been managing a semiprofessional
-                            volleyball team for the Volleyball League of America, even going as far as 
-                            preparing a website for the team, which will be found in the links below as 
-                            I complete it.
+                        I absolutely love volleyball, and have been actively playing since 2013. 
+                        In recent history, I established and have been managing a semiprofessional
+                        volleyball team for the Volleyball League of America, even going as far as 
+                        preparing a website for the team, which will be found in the links below when 
+                        I complete it.
                     </p>
-                </div>
-                <img src="./assets/images/IMG_20220629_104454_947.jpg" class="card-image-bottom" alt="My current volleyball team, the Phoenix Valor">
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card mx-2" style="border: 8px double darkorange">
-                <img src="./assets/images/IMG_20220627_133231_118.jpg" class="card-image-top" alt="My fiance and myself in the snow">
-                <div class="card-body">
                     <p class="text-center">
-                            I am recently engaged to the lovely woman above, and we both parent the adorable
-                            fur baby as well. She has a background in graphic design, so maybe we can become
-                            a duo that develops beautiful websites from our own office. We've already brainstormed
-                            multiple ideas that may come to fruition later in this year!
+                        I am recently engaged to a lovely woman named Jorden, and we both parent the adorable
+                        fur baby as well. She has a background in graphic design, so maybe we can become
+                        a duo that develops beautiful websites from our own office. We've already brainstormed
+                        multiple ideas that may come to fruition later in this year!
                     </p>
-                </div>
-                <img src="./assets/images/20220516_191501.jpg" class="card-image-bottom" alt="My Golden Retriever puppy, Fenix">
-            </div>
-        </div>
-        
-        <div class="col-3"> 
-            <div class="card mx-2" style="border: 8px double darkorange">
-                <div class="card-body">
-                <p class="text-center">
+                    <p class="text-center">
                         My education has taken me all over the place. I first entered Arizona State University
                         pursuing a B.S. in Computer Systems Engineering. My sophomore year, I decided to pursue
                         psychology instead. I graduated in 2017, and for a short time floated around until I came
-                        back to engineering as a Fire Protection Design Engineer, even earning certification through
+                        back to engineering as a Fire Protection Design Engineer, even earning certification through NICET as a
                         Level 2 with Water-Based Systems Layout. Now I'm looking to return to my previous passion in 
                         the tech world. Currently, I am pursuing education through the web development bootcamp hosted
                         by the University of Arizona, and expecting to complete this in December of 2022.
-                </p>
+                    </p>
+                </div>
+            </div>
+              
+    </div>
+    <!-- Screenshots and links to projects -->
+    <h2 class="text-center my-5">Featured Projects:</h2>
+    <main id="projects" class="d-flex justify-content-center">
+            <!-- Main / Featured Project-->
+        <div class="card col-6 text-center my-5">
+            <img src="./assets/images/TypeGame_landingpagepic.png" class="card-img-top img-thumbnail" alt="A picture and link to the featured project">
+            <div class="card-body">
+                <h3 class="card-header">Type the Word or Explode!</h3>
+                <p class="card-text">A short typing game employing a UI Kit CSS framework and heavy Javascript for game functionality. Type 10 random words as fast as you can!</p>
+                <a class="btn" href="https://lucasz10.github.io/Type-the-Word-or-Explode/" role="button">Go To App!</a> 
             </div>
         </div>
-    </div>
-
-    <!-- Screenshots and links to projects -->
-    <main id="projects">
-            <!-- Main / Featured Project-->
-            <a class="recent-project" href="https://lucasz10.github.io/Type-the-Word-or-Explode/" target="blank"><span class=proj1></span> <img src="./assets/images/TypeGame_landingpagepic.png" alt="A picture and link to the featured project"> </a>
     </main>
-    <section class="upcoming">
+    <div class="d-flex justify-content-center">
             <!-- Secondary / Upcoming Projects-->
-            <div class="sub-projects">
-                <a href="https://lucasz10.github.io/Weather-Search-Dashboard/" target="blank"><span class=proj2></span> <img src="./assets/images/weatherSearchDashboard_landingPage.png" alt="a picture to the second project"></a>
+            <div class="card col-3 text-center my-5 mx-3">
+                <img src="./assets/images/weatherSearchDashboard_landingPage.png" class="card-img-top img-thumbnail" alt="a picture to the second project">
+                <div class="card-body">
+                    <h3>Weather Dashboard</h3>
+                    <a class="btn" href="https://lucasz10.github.io/Type-the-Word-or-Explode/" role="button">Go To App!</a> 
+                </div>
             </div>
-
-            <div class="sub-projects">
-                <a href="https://lucasz10.github.io/Project-Day-Planner/" target="blank"><span class=proj3></span> <img src="./assets/images/projectPlanner_landingPage.png" alt="a picture to the third project"></a>
+            <div class="card col-3 text-center my-5 mx-3">
+                <img src="./assets/images/projectPlanner_landingPage.png" class="card-img-top img-thumbnail" alt="a picture to the third project">
+                <div class="card-body">
+                    <h3>Project Planner</h3>
+                    <a class="btn" href="https://lucasz10.github.io/Project-Day-Planner/" role="button">Go To App!</a> 
+                </div>
+            </div>
+            <div class="card col-3 text-center my-5 mx-3">
+                <img src="./assets/images/passwordGenerator_landingPage.png" class="card-img-top img-thumbnail" alt="a picture to the fourth project">
+                <div class="card-body">
+                    <h3>Password Generator</h3>
+                    <a class="btn" href="https://lucasz10.github.io/Zach-Lucas-Password-Generator/" role="button">Go To App!</a> 
+                </div>
             </div>
             
-            <div class="sub-projects">
-                <a href="https://lucasz10.github.io/Zach-Lucas-Password-Generator/" target="blank"><span class=proj4></span> <img src="./assets/images/passwordGenerator_landingPage.png" alt="a picture to the fourth project"></a>
-            </div>
-
-            <div class="sub-projects">
-                <a href="https://lucasz10.github.io/Zach-Lucas-Code-Quiz/" target="blank"><span class=proj4></span> <img src="./assets/images/codeQuiz_landingPage.png" alt="a picture to the fifth project"></a>
-            </div>
-
-    </section>        
+    </div>        
 
 
     <footer class="w-100" id="socials">
         <h3> Socials & Contact Information </h3>
-        <ul class="navTools">
-            <li><a class="navBar" href='mailto:lucas.zach10@gmail.com' target='blank'> Email</a></li>
-            <li><a class="navBar" href='https://www.linkedin.com/in/zachary-lucas-234a78166/' target="blank">LinkedIn</a></li>
-        </ul>
+        <div class="col px-5">
+            <a class="btn" href="mailto:lucas.zach10@gmail.com" role="button">Send an Email!</a>
+            <a class="btn" href="https://www.linkedin.com/in/zachary-lucas-234a78166/" role="button">My LinkedIn</a>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
